@@ -30,7 +30,7 @@ function loginCallback() {
     }
 
     console.log(`Login callback: ${username.val()}:${password.val()}`);
-    window.open("https://google.com", "_blank");
+    //window.open("https://google.com", "_blank");
 }
 
 function forgotPasswordCallback() {

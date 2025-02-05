@@ -115,7 +115,7 @@ body::after {
     width: 400px;
     height: 50px;
     padding-left: 10px;
-    padding-top: 3px;
+    padding-top: 0px;
     padding-bottom: 1px;
     appearance: none;
 }
@@ -164,7 +164,12 @@ body::after {
     text-decoration: underline;
     color: #00D471;
     cursor: pointer;
+    user-select: none;
 }
+.p-sign-up-1 {
+    user-select:text;
+}
+
 
 #p-forgot {
     margin-right: 20px;
