@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfol.io | Login or Sign up</title>
+
+    <link rel="stylesheet" href="login-style.css">
+
+    <!-- Reference this later: https://animate.style/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="login-script.js"></script>
+</head>
+<body>
+    <div id="screen">
+        <div id="main-body">
+            <!--Container for site logo-->
+            <div id="site-logo">
+                <h1 id="title-text">Portfol.io</h1>
+            </div>
+            <!--Container for input forms-->
+            <div class="input-forms">
+                <!--Container for login forms-->
+                <div id="login-forms">
+                    <div class="header" id="top-login">
+                        <h1 class="header-text" id="sign-in">Sign in</h1>
+                        <p class="small-text">Need an account? <button class="link" onclick="changePageCallback()">Sign up</button></p>
+                    </div>
+                    <div id="middle-login-input">
+                        <div id="login-username-cont">
+                            <p id="user-label">Username or Email Address</p>
+                            <input class="in-text" type="text" id="in-username" placeholder=" Username/Email">
+                            <p class="error-text" id="err-username" hidden>Invalid username</p>
+                        </div>
+                        <div id="login-password-cont">
+                            <p id="pass-label">Password</p>
+                            <input class="in-text" type="password" id="in-password" placeholder=" Password">
+                            <p class="error-text" id="err-password" hidden>Invalid password</p>
+                        </div>
+                    </div>
+                    <div id="middle-login-check">
+                        <div id="remember-check-cont">
+                            <input id="rem-box" type="checkbox" name="remember-check">
+                            <button class="small-text" onclick="rememberShortcut()">Remember me</button>
+                        </div>
+                        <div id="forgot-cont">
+                            <button class="link" onclick="forgotPasswordCallback()">Forgot password?</button> 
+                        </div>
+                    </div>
+                    <div class="footer" id="bottom-login">
+                        <button class="input-btn" onclick="loginCallback()">Sign in</button>
+                    </div>
+                </div>
+                <!--Container for signup forms-->
+                <div id="signup-forms">
+                    <div class="header" id="top-signup">
+                        <h1 class="header-text" id="sign-up">Sign up</h1>
+                        <p class="small-text">Have an account? <button class="link" onclick="changePageCallback()">Sign in</button></p>
+                    </div>
+                    <div id="middle-signup-input">
+                        <div id="signup-username-cont">
+                            <p id="signin-email-label">Email</p>
+                            <input class="in-text" type="text" id="signin-email" placeholder=" Enter email address">
+                            <p class="error-text" id="err-signin-email" hidden>Invalid email</p>
+                            <p id="signin-user-label">Username</p>
+                            <input class="in-text" type="text" id="signin-username" placeholder=" Must be 3 characters or longer">
+                            <p class="error-text" id="err-signin-username" hidden>Invalid username</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div id="signup-password-cont">
+                            <p id="pass-label">Password</p>
+                            <input class="in-text" type="password" id="in-password" placeholder=" Must be 8 characters or longer">
+                            <p id="pass-label">Confirm Password</p>
+                            <input class="in-text" type="password" id="in-password" placeholder=" Match password">
+                            <p class="error-text" id="err-password" hidden>Invalid password</p>
+                        </div>
+                    </div>
+                    <div class="footer" id="bottom-signup">
+                        <button class="input-btn" onclick="signupCallback()">Sign Up</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
