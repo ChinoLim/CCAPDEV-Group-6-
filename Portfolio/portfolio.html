@@ -4,151 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio design</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+
     <!-- Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="header" id="about-me">
-        <div class="nav-links">
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#services">Services Offered</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-                <li><a href="#export">Export</a>
-            </ul>
-        </div>
-        <div class="title">
-            <img src="images/sample logo.jpg" alt="Sample Logo" class="logo">
-            Portfolio Maker
-        </div>         
-        <div class="text-box">
-            <h1>Mabuhay!</h1>
-            <h2>I'm Ron Reyes</h2>
-            <h3>An aspiring web developer from Philippines</h3>
-        </div>
-        <div class="text-box1">
-            <h4>I'm Ron Reyes, a passionate web developer with a strong interest in building interactive, user-friendly, and efficient web applications. I have always been passionate about solving problems through technology, and web development gives me the perfect platform to do just that. I enjoy breaking down complex challenges and finding innovative solutions that not only work efficiently but also improve user experiences. My approach to development is user-first, ensuring that every website or application I create is intuitive, responsive, and accessible to all users, regardless of their device or technical background.</h4>
-        </div>
-        <div class="profilepic">
-            <img src="images/R-removebg-preview.png">
-        </div>
-        <div class="profilebg"></div>
-    </section>
-    
-    <!-- -------Achievements------- -->
-    <section class="achievements" id="achievements">
-        <h1>List of Achievements</h1>
-        <p>These are some of my acheivements in my programming journey.</p>
-        <div class="row1">
-            <div class="project">
-                <a href="https://www.google.com/" target="_blank"><img src="images/proj1.png" class="img"></a>
-                <p>E-StoreX</p>
-            </div>
-            <div class="project">
-                <a href="https://www.google.com/" target="_blank"><img src="images/proj2.png" class="img"></a>
-                <p>VetCareX</p>
-            </div>
-            <div class="project">
-                <a href="https://www.google.com/" target="_blank"><img src="images/proj3.png" class="img"></a>
-                <p>ProjectX</p>
-            </div>
-        </div>
-        <div class="row2">
-            <div class="project">
-                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&t/" target="_blank"><img src="images/proj4.jpg" class="img"></a>
-                <p>RollX</p>
-            </div>
-            <div class="project">
-                <a href="https://www.google.com/" target="_blank"><img src="images/proj5.png" class="img"></a>
-                <p>NothingX</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- -------Skills------- -->
-    <section class="skills" id="services">
-        <div class="content">
-            <h1>My Skills</h1>
-            <div class="skills-details">
-                <div class="text">
-                    <h2>The future belongs to those who learn more skills and find ways to combine them in creative ways</h2>
-                    <p>With experience in HTML, CSS, Python, JavaScript, PHP, and MySQL, I specialize in crafting responsive websites and dynamic web applications. I love exploring modern web technologies such as React.js, Node.js, and Tailwind CSS while continuously improving my skills.
 
-I believe in clean code, intuitive UI/UX, and optimized performance. My goal is to develop web solutions that provide seamless experiences for users and businesses alike.</p>
-                </div>
-                <div class="skill-levels">
-                    <table>
-                        <tr>
-                            <th>Programming</th>
-                            <th>Level</th>
-                        </tr>
-                        <tr>
-                            <td>Java</td>
-                            <td>Intermediate</td>
-                        </tr>
-                        <tr>
-                            <td>Python</td>
-                            <td>Advanced</td>
-                        </tr>
-                        <tr>
-                            <td>HTML</td>
-                            <td>Expert</td>
-                        </tr>
-                        <tr>
-                            <td>C</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td> </td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td> </td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td> </td>
-                            <td> </td>
-                        </tr>
-                    </table>
-                   <div class="ofexp">
-                        <div class="years">
-                            XX
-                        </div>
-                        <div class="exper1">
-                            Years
-                        </div>
-                        <div class="exper">
-                            of experience
-                        </div>
-                   </div>
+    <!-- Page 1 -->
+    <section class="about-me" id="about-me">
+        <div class="about-container">
+            <div class="about">
+                <h1 id="greet">Hello I'm "Josh"</h1>
+                <div class="text1">
+                    <p id="about-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ex, deleniti cum quam consequatur modi aspernatur debitis quod explicabo temporibus blanditiis odio repellendus veritatis maiores ullam? Necessitatibus dolor, exercitationem commodi minima ratione consequuntur possimus accusamus saepe neque optio laboriosam dicta aspernatur autem mollitia repellat cum vitae, impedit sit. Quisquam amet explicabo et laboriosam sit aliquam, temporibus maiores dolor cupiditate, corrupti esse consequatur distinctio inventore. Labore vitae, adipisci error impedit officia ut a sapiente quisquam similique suscipit ipsam! Esse ut quia nesciunt, dolor quos consequatur inventore nam id reprehenderit doloribus sit iusto eos tempora beatae, distinctio nostrum nihil quis minus mollitia ducimus, consequuntur laudantium architecto. Reiciendis voluptatum dolorum, consequuntur adipisci voluptatem rerum nemo veritatis eaque deleniti ea ipsum aut, magni sequi nulla mollitia labore suscipit! Aliquam consectetur ex saepe, itaque, at qui totam expedita error quaerat reiciendis, repellendus dicta nesciunt reprehenderit delectus. Corporis, quis repellendus rem adipisci soluta qui magni possimus et quam delectus molestiae alias inventore optio quaerat sed? Id, maiores excepturi! Sed quod possimus ut autem recusandae voluptas vitae cum? Repudiandae veritatis eligendi asperiores ratione corrupti fugit molestias veniam similique tempora! At rerum molestiae soluta reiciendis nostrum exercitationem nulla ipsum inventore, repellendus reprehenderit et est distinctio eligendi repudiandae ipsam perspiciatis, fugit sit consequuntur. Nostrum, debitis. Sunt voluptatem amet, repudiandae similique distinctio minima, reprehenderit, error sapiente est quae inventore culpa nesciunt possimus aliquid odit exercitationem quisquam porro nam. Voluptatibus illum perspiciatis aspernatur enim! Veniam, fuga. Ex nulla saepe eveniet suscipit ipsa, harum veniam earum, voluptate facilis hic commodi odio. Repudiandae error, blanditiis ad asperiores sapiente odio est eligendi inventore enim adipisci in odit, quas porro omnis reprehenderit quidem. Doloremque totam perferendis architecto inventore tempora placeat perspiciatis, neque minima, veritatis illo fugit adipisci esse, eos sapiente? Modi eum amet soluta a quidem dolores explicabo eos sunt id fugiat, ullam quo fugit, sed vel perferendis aliquid ratione, minima accusantium laborum libero repellat at esse harum. Expedita quos recusandae perspiciatis doloremque eligendi nulla totam delectus omnis cum reprehenderit rem, nisi qui odit corrupti eius voluptate? Minima veniam in tenetur quisquam molestiae neque eius sapiente odit soluta culpa reprehenderit, maxime fugit eum error ducimus doloribus similique, alias delectus fugiat, hic eaque excepturi aliquid. Dolor pariatur repellat dolore tempore dolorum, similique ut aut non veniam eaque quisquam nulla inventore nam. Expedita, reiciendis optio? Totam quibusdam quas culpa eos facere accusantium sit. Explicabo, eaque? Incidunt corporis ex ab autem, reiciendis nesciunt! Consequuntur atque sed recusandae autem perferendis ab harum, velit omnis reprehenderit dolore soluta quaerat qui pariatur eaque nemo voluptas error, nam aspernatur a veniam impedit, consequatur explicabo similique! Doloremque laudantium architecto accusantium quasi repellendus, repellat labore! Ipsum ea alias quasi, eos, distinctio repellendus tenetur consectetur magnam pariatur quae harum ut dolore adipisci reprehenderit veniam beatae eligendi quo deserunt ratione a, qui porro! Assumenda id tempore ad laudantium at quia, quaerat amet earum modi ut officiis enim asperiores perferendis eaque deleniti provident soluta alias, debitis sint reiciendis quos cumque? Pariatur consequuntur labore tenetur officia, quia eaque libero totam rem error dolores, omnis nulla! Voluptate, inventore optio!</p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="contacts" id="contacts">
-    <div class="contacts-text-container">
-        <h1>Contact Me</h1>
-        <h2>@</h2>
-    </div>
-    <div class="contact-container">
-        <div class="contact-disp"><a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png"></a></div>
-        <div class="contact-disp"><a href="https://www.instagram.com/" target="_blank"><img src="images/insta.png"></a></div>
-        <div class="contact-disp"><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png"></a></div>
-        <div class="contact-disp"><a href="https://x.com/" target="_blank"><img src="images/x.png"></a></div>
-    </div>
-    <div class="phone">
-        <div class="email">
-            <a href="https://gmail.com" target="_blank"><img src="images/gmail.png"></a>
+        <div class="profile-container">
+            <div class="profile">
+                <img src="images/Josh.jpg" class="profile-img" alt="user">
+            </div>
+            <div class="contact-container">
+                <h1 id="contacts">Contact me at:</h1>
+                <div class="contact-logos">
+                    <a href="https://www.facebook.com/" target="_blank" class="facebook"><img src="images/fb.png" alt="facebook"></a>
+                    <div class="pop-button" onclick="openPopup('email-popup')">
+                        <img src="images/g.jpg" alt="email" class="email">
+                    </div>
+                    <div class="pop-button" onclick="openPopup('phone-popup')">
+                        <img src="images/phone_PNG48939.png" alt="phone" class="phone">
+                    </div>
+                </div>
+            </div>
         </div>
-        <h1>Phone Number: 0987-654-3210<br>Email: johnhuman@corp.com</h1>
-    </div>
+        <!-- Pop-ups for phone and email -->
+        <div id="overlay" class="overlay" onclick="closeAllPopups()"></div>
+        <div id="email-popup" class="email-pop">
+            <p>josh@gmail.com</p>
+        </div>
+        <div id="phone-popup" class="phone-pop">
+            <p>123-456-7890</p>
+        </div>
     </section>
 
+    <!-- Page 2 -->
+    <section class="skills" id="skills">
+        <h1 id="skill-title">Skills</h1>
+        <div class="skill-container">
+            <button class="button" id="prevButton">Previous</button>
+            <div class="revolver">
+                <div class="content-container" id="content">
+                    <div class="content-item">
+                        <h2 class="content-title">Title 1</h2>
+                        <p class="content-description">This is the description for content 1.</p>
+                    </div>
+                    <div class="content-item">
+                        <h2 class="content-title">Title 2</h2>
+                        <p class="content-description">This is the description for content 2.</p>
+                    </div>
+                    <div class="content-item">
+                        <h2 class="content-title">Title 3</h2>
+                        <p class="content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic similique laudantium minima aperiam? Adipisci sapiente molestias autem officiis culpa eos earum, optio vitae illo, deserunt nobis impedit in eius accusamus iure, similique quod temporibus. Quibusdam a vitae deleniti voluptatem quae modi incidunt dicta aliquam natus, possimus accusantium fuga quo nesciunt dolores debitis dignissimos adipisci ullam dolorum assumenda harum ut! Placeat est quidem perspiciatis quaerat ab, eaque adipisci tenetur nesciunt, soluta doloribus suscipit officia assumenda incidunt consequuntur fugiat architecto sapiente sit ipsam. Maiores ea veniam quasi, a modi cumque, sequi repellat doloribus consequatur dicta reprehenderit voluptate natus expedita hic dolore. Blanditiis.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="button" id="nextButton">Next</button>
+        </div>
+    </section>
+
+    <!-- Page 3 -->
+    <section class="projects" id="project">
+        <h1 id="project-title">Projects</h1>
+        <div class="project-container">
+            <button class="button" id="AprevButton">Previous</button>
+            <div class="project-revolver">
+                <div class="project-content-container" id="Acontent">
+                    <div class="project-item">
+                        <img src="images/proj1.png" class="project-image" alt="proj1">
+                        <h2 class="project-title">Title 1</h2>
+                        <p class="content-description">This is the description for content 1.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/proj2.png" class="project-image" alt="proj2">
+                        <h2 class="project-title">Title 2</h2>
+                        <p class="project-description">This is the description for content 2.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/proj3.png" class="project-image" alt="proj3">
+                        <h2 class="project-title">Title 3</h2>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic similique laudantium minima aperiam? Adipisci sapiente molestias autem officiis culpa eos earum, optio vitae illo, deserunt nobis impedit in eius accusamus iure, similique quod temporibus. Quibusdam a vitae deleniti voluptatem quae modi incidunt dicta aliquam natus, possimus accusantium fuga quo nesciunt dolores debitis dignissimos adipisci ullam dolorum assumenda harum ut! Placeat est quidem perspiciatis quaerat ab, eaque adipisci tenetur nesciunt, soluta doloribus suscipit officia assumenda incidunt consequuntur fugiat architecto sapiente sit ipsam. Maiores ea veniam quasi, a modi cumque, sequi repellat doloribus consequatur dicta reprehenderit voluptate natus expedita hic dolore. Blanditiis.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="button" id="AnextButton">Next</button>
+        </div>
+    </section>
+
+    <script src="javascript/popups.js"></script>
+    <script src="javascript/skill revolver.js"></script>
+    <script src="javascript/project revolver.js"></script>
 </body>
 </html>
+
