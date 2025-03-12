@@ -489,6 +489,12 @@ function resetForm(formIndex) {
     });
 }
 
+function showScreenNotification(header, message) {
+    $(".screen-notif-header").text(header);
+    $(".screen-notif-msg").html(message.replace(/\n/g, "<br>"));
+    $(".screen-notif").addClass("show");
+}
+
 function connectToDB() {
 
 }
@@ -507,10 +513,4 @@ function validSignInCredentials(username, password, isUsername) {
 
 function validRecoveryCode(code, email) {
     return true;
-}
-
-function showScreenNotification(header, message) {
-    $(".screen-notif-header").text(header);
-    $(".screen-notif-msg").html(message.replace(/\n/g, "<br>"));
-    $(".screen-notif").addClass("show");
 }
