@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Yanone Kaffeesatz", serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+.header {
+    background-color: #181A1B;
+    padding: 10px;
+}
+
+.title {
+    color: #46FFA6;
+    font-size: 100px;
+}
+
+.form-container {
+    background-color: #181A1B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+}
+
+.form-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-forms {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #222425;
+    box-shadow: 0px 0px 10px #101010;
+    border-radius: 20px;
+}
