@@ -1,0 +1,190 @@
+[{
+  "_id": {
+    "$oid": "67cec56c2056e361501505e3"
+  },
+  "username": "josh_smith",
+  "password": "securepassword123",
+  "full_name": "Josh Smith",
+  "about_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+  "facebook_profile": "https://www.facebook.com/josh.smith",
+  "email": "josh@example.com",
+  "phone_number": "+1234567890",
+  "skills": [
+    {
+      "title": "HTML",
+      "description": "Expert in HTML and web development."
+    },
+    {
+      "title": "CSS",
+      "description": "Proficient in CSS and styling."
+    },
+    {
+      "title": "JavaScript",
+      "description": "Experienced in JavaScript for interactive web applications."
+    }
+  ],
+  "projects": [
+    {
+      "photo": "images/project-one.jpg",
+      "title": "Project One",
+      "description": "A brief description of Project One."
+    },
+    {
+      "photo": "images/project-two.jpg",
+      "title": "Project Two",
+      "description": "A brief description of Project Two."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67cec58d2056e361501505e5"
+  },
+  "username": "alice_johnson",
+  "password": "securepassword123",
+  "full_name": "Alice Johnson",
+  "about_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+  "facebook_profile": "https://www.facebook.com/alice.johnson",
+  "email": "alice@example.com",
+  "phone_number": "+1234567890",
+  "skills": [
+    {
+      "title": "HTML",
+      "description": "Expert in HTML and web development."
+    },
+    {
+      "title": "CSS",
+      "description": "Proficient in CSS and styling."
+    },
+    {
+      "title": "JavaScript",
+      "description": "Experienced in JavaScript for interactive web applications."
+    }
+  ],
+  "projects": [
+    {
+      "photo": "images/project-one.jpg",
+      "title": "Project One",
+      "description": "A brief description of Project One."
+    },
+    {
+      "photo": "images/project-two.jpg",
+      "title": "Project Two",
+      "description": "A brief description of Project Two."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67cec5952056e361501505e7"
+  },
+  "username": "bob_williams",
+  "password": "securepassword123",
+  "full_name": "Bob Williams",
+  "about_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+  "facebook_profile": "https://www.facebook.com/bob.williams",
+  "email": "bob@example.com",
+  "phone_number": "+1234567890",
+  "skills": [
+    {
+      "title": "HTML",
+      "description": "Expert in HTML and web development."
+    },
+    {
+      "title": "CSS",
+      "description": "Proficient in CSS and styling."
+    },
+    {
+      "title": "JavaScript",
+      "description": "Experienced in JavaScript for interactive web applications."
+    }
+  ],
+  "projects": [
+    {
+      "photo": "images/project-one.jpg",
+      "title": "Project One",
+      "description": "A brief description of Project One."
+    },
+    {
+      "photo": "images/project-two.jpg",
+      "title": "Project Two",
+      "description": "A brief description of Project Two."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67cec59f2056e361501505e9"
+  },
+  "username": "charlie_brown",
+  "password": "securepassword123",
+  "full_name": "Charlie Brown",
+  "about_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+  "facebook_profile": "https://www.facebook.com/charlie.brown",
+  "email": "charlie@example.com",
+  "phone_number": "+1234567890",
+  "skills": [
+    {
+      "title": "HTML",
+      "description": "Expert in HTML and web development."
+    },
+    {
+      "title": "CSS",
+      "description": "Proficient in CSS and styling."
+    },
+    {
+      "title": "JavaScript",
+      "description": "Experienced in JavaScript for interactive web applications."
+    }
+  ],
+  "projects": [
+    {
+      "photo": "images/project-one.jpg",
+      "title": "Project One",
+      "description": "A brief description of Project One."
+    },
+    {
+      "photo": "images/project-two.jpg",
+      "title": "Project Two",
+      "description": "A brief description of Project Two."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67cec5aa2056e361501505eb"
+  },
+  "username": "dana_davis",
+  "password": "securepassword123",
+  "full_name": "Dana Davis",
+  "about_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+  "facebook_profile": "https://www.facebook.com/dana.davis",
+  "email": "dana@example.com",
+  "phone_number": "+1234567890",
+  "skills": [
+    {
+      "title": "HTML",
+      "description": "Expert in HTML and web development."
+    },
+    {
+      "title": "CSS",
+      "description": "Proficient in CSS and styling."
+    },
+    {
+      "title": "JavaScript",
+      "description": "Experienced in JavaScript for interactive web applications."
+    }
+  ],
+  "projects": [
+    {
+      "photo": "images/project-one.jpg",
+      "title": "Project One",
+      "description": "A brief description of Project One."
+    },
+    {
+      "photo": "images/project-two.jpg",
+      "title": "Project Two",
+      "description": "A brief description of Project Two."
+    }
+  ]
+}]

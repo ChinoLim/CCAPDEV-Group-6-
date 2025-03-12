@@ -60,7 +60,7 @@ body, .content {
     position: absolute;
     font-family: "Yanone Kaffeesatz", serif;
     font-weight: bold;
-    font-size: min(10vw, 10vh);
+    font-size: min(25vw, 25vh);
     color: #46FFA6;
 }
 
