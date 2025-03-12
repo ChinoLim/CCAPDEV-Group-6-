@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/entry-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script/entry-page.js"></script>
+
+    <title>Portfol.io - Sign In</title>
+</head>
+<body>
+    <div class="content">
+        <div class="icon-container">
+            <div class="icon-box">
+                <div id="icon-name">Portfol.io</div>
+                <img id="icon-background" src="images/background.png">
+            </div>
+        </div>
+
+        <div class="form-container">
+            <div class="form-box" id="sign-up-form">
+                <div class="form-box-content">
+                    <h1 class="form-header">Sign Up</h1>
+
+                    <div class="div-input div-email">
+                        <h2 class="label-field label-email">Email Address<span class="label-field-msg label-email-msg">Invalid Email Address</span></h2>
+                        <input class="input-field input-email" type="text" placeholder="Email Address" autocomplete="off">
+                    </div>
+
+                    <div class="div-input div-username">
+                        <h2 class="label-field label-username">Username<span class="label-field-msg label-username-msg">Invalid Username</span></h2>
+                        <input class="input-field input-username" type="text" placeholder="Username" autocomplete="off">
+                    </div>
+
+                    <div class="div-input div-password">
+                        <h2 class="label-field label-password">Password<span class="label-field-msg label-password-msg">Invalid Password</span></h2>
+                        <div class="div-password-actions">
+                            <input class="input-field input-password" type="password" placeholder="Password" autocomplete="off">
+                            <div class="button-password-reveal"></div>
+                        </div>
+                    </div>
+
+                    <div class="div-input div-password-confirm">
+                        <h2 class="label-field label-password-confirm">Confirm Password<span class="label-field-msg label-password-confirm-msg">Invalid Confirm Password</span></h1>
+                        <div class="div-password-actions">
+                            <input class="input-field input-password-confirm" type="password" placeholder="Confirm Password" autocomplete="off">
+                            <div class="button-password-reveal"></div>
+                        </div>
+                    </div>
+
+                    <div class="div-actions">
+                        <p class="label-actions label-sign-in">Already have an account? <span class=action-sign-in>Sign in</span></p>
+                        <button class="button-proceed">SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-box" id="sign-in-form">
+                <div class="form-box-content">
+                    <h1 class="form-header">Sign In</h1>
+
+                    <div class="div-input div-username">
+                        <h2 class="label-field label-username">Email or Username<span class="label-field-msg label-username-msg">Invalid Username</span></h2>
+                        <input class="input-field input-username" type="text" placeholder="Email or Username" autocomplete="off">
+                    </div>
+
+                    <div class="div-input div-password">
+                        <h2 class="label-field label-password">Password<span class="label-field-msg label-password-msg">Invalid Password</span></h2>
+                        <div class="div-password-actions">
+                            <input class="input-field input-password" type="password" placeholder="Password" autocomplete="off">
+                            <div class="button-password-reveal"></div>
+                        </div>
+                    </div>
+
+                    <div id="div-remember">
+                        <label id="label-remember">Remember me</label>
+                        <input id="box-remember" type="checkbox" value="false">
+                    </div>
+
+                    <div class="div-actions">
+                        <p class="label-actions" id="action-forgot-password">Forgot password?</p>
+                        <p class="label-actions label-sign-up">Need an account? <span class="action-sign-up">Sign up</span></p>
+                        <button class="button-proceed">SIGN IN</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-box" id="password-recovery-email-form">
+                <div class="form-box-content">
+                    <h1 class="form-header">Password Recovery</h1>
+
+                    <div class="div-input div-email">
+                        <h2 class="label-field label-email">Email Address<span class="label-field-msg label-email-msg">Invalid Email Address</span></h2>
+                        <input class="input-field input-email" type="text" placeholder="Email Address" autocomplete="off">
+                    </div>
+
+                    <div class="div-actions">
+                        <p class="label-actions label-sign-in">Remembered your password? <span class=action-sign-in>Sign in</span></p>
+                        <button class="button-proceed">PROCEED</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-box" id="password-recovery-code-form">
+                <div class="form-box-content">
+                    <h1 class="form-header">Password Recovery</h1>
+
+                    <div class="div-input div-recovery-code-form">
+                        <h2 class="label-field label-recovery-code">Recovery Code<span class="label-field-msg label-recovery-code-msg">Invalid Recovery Code</span></h2>
+                        <input class="input-field input-recovery-code" type="text" placeholder="6 Digit Recovery Code" autocomplete="off">
+                    </div>
+
+                    <div class="div-actions">
+                        <p class="label-actions label-sign-in">Remembered your password? <span class=action-sign-in>Sign in</span></p>
+                        <button class="button-proceed">PROCEED</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-box" id="pasword-recovery-new-form">
+                <div class="form-box-content">
+                    <h1 class="form-header">Password Recovery</h1>
+
+                    <div class="div-input div-password">
+                        <h2 class="label-field label-password">New Password<span class="label-field-msg label-password-msg">Invalid Password</span></h2>
+                        <div class="div-password-actions">
+                            <input class="input-field input-password" type="password" placeholder="New Password" autocomplete="off">
+                            <div class="button-password-reveal"></div>
+                        </div>
+                    </div>
+
+                    <div class="div-input div-password-confirm">
+                        <h2 class="label-field label-password-confirm">Confirm New Password<span class="label-field-msg label-password-confirm-msg">Invalid Confirm Password</span></h1>
+                        <div class="div-password-actions">
+                            <input class="input-field input-password-confirm" type="password" placeholder="Confirm New Password" autocomplete="off">
+                            <div class="button-password-reveal"></div>
+                        </div>
+                    </div>
+
+                    <div class="div-actions">
+                        <p class="label-actions label-sign-in">Remembered your password? <span class=action-sign-in>Sign in</span></p>
+                        <button class="button-proceed">SET PASSWORD</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-box" id="password-recovery-success-form">
+                <div class="form-box-content">
+                    <h1 class="form-header">Password Recovery</h1>
+
+                    <div class="div-input div-recovery-code-form">
+                        <h2 class="label-field">Password has successfully been changed.</h2>
+                    </div>
+
+                    <div class="div-actions">
+                        <button class="button-proceed">BACK TO SIGN IN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="screen-notif">
+        <div class="screen-notif-box">
+            <h1 class="screen-notif-header">Header</h1>
+            <h2 class="screen-notif-msg">Message</h2>
+            <div class="screen-notif-actions">
+                <button class="button-screen-notif-affirm">Okay</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
