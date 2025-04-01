@@ -1,0 +1,118 @@
+<!-- File: public/portfolio.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+  <!-- Link your new portfolio.css -->
+  <link rel="stylesheet" href="css/portfolio.css" />
+
+  <!-- Fonts / Animations (optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+ 
+    <!-- Page 1 -->
+    <section class="about-me" id="about-me">
+      <div class="about-container">
+          <div class="about">
+              <h1 id="greet">Hello I'm</h1>
+              <h1 id="User-name">Joel Sample</h1>
+
+              <button id="btn-edit-bio">Edit Bio</button>
+              
+              <div class="text1">
+                  <p id="about-body">Lorem ipsum dolor sit amet co officia ut a sapo!</p>
+                
+
+              </div>
+          </div>
+      </div>
+      <div class="profile-container">
+          <div class="profile">
+              <img src="images/Josh.jpg" class="profile-img" alt="user">                   
+              
+              
+              <!-- Logout e.g, near the top or in a nav bar -->
+              <button id="logoutBtn">Logout</button>
+              
+
+          </div>
+          <div class="contact-container">
+              <h1 id="contacts">Contact me at:</h1>
+              <div class="contact-logos">
+                  <a href="https://www.facebook.com/" target="_blank" class="facebook"><img src="images/fb.png" alt="facebook"></a>
+                  <div class="pop-button" onclick="openPopup('email-popup')">
+                      <img src="images/g.jpg" alt="email" class="email">
+                  </div>
+                  <div class="pop-button" onclick="openPopup('phone-popup')">
+                      <img src="images/phone_PNG48939.png" alt="phone" class="phone">   
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Pop-ups for phone and email -->
+      <div id="overlay" class="overlay" onclick="closeAllPopups()"></div>
+      <div id="email-popup" class="email-pop">
+          <p id="email-id">josh@gmail.com</p>
+      </div>
+      <div id="phone-popup" class="phone-pop">
+          <p id="phone-id">123-456-7890</p>
+      </div>
+  </section>
+
+  <!-- Page 2 -->
+  <section class="skills" id="skills">
+      <h1 id="skill-title">Skills</h1>
+      <button id="btn-add-skill">+ Add Skill</button>
+
+      <div class="skill-container">
+        
+          <div class="revolver">
+              <div class="content-container" id="skills-revolver-content"></div>
+                    
+              </div>
+          </div>
+          <div class="arrow-buttons">
+            <button class="arrow-btn" id="prevButton">←</button>
+            <button class="arrow-btn" id="nextButton">→</button>
+          </div>
+          
+          
+      </div>
+  </section>
+
+  <!-- Page 3 -->
+  <section class="projects" id="projects">
+      <h1 id="project-title">Projects</h1>
+      <button id="btn-add-project">+ Add project</button>
+      <div class="project-container">
+        
+        <div class="project-scroll-wrapper">
+            <button class="arrow-btn" id="project-prev">←</button>
+
+          <div class="project-revolver">
+            <div class="project-content-container" id="projects-revolver-content"></div>
+                  
+              </div> 
+              <button class="arrow-btn" id="project-next">→</button>
+            </div>
+          </div>
+      </div>
+
+
+
+  <!-- Scripts for phone/email popups, revolve logic, data fetch, etc. -->
+  <script src="js/popups.js"></script>
+  <script src="js/skillrevolver.js"></script>
+  <script src="js/projectrevolver.js"></script>
+  <script src="js/fetch.js"></script>
+</body>
+</html>

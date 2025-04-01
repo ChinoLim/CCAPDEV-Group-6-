@@ -1,0 +1,323 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    user-select: none;
+}
+
+html, body {
+    height: 100%;
+    background-color: #000000;
+}
+
+body, .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #181A1B;
+}
+
+.content {
+    flex-direction: row;
+    background-color: #181A1B;
+}
+
+.icon-container, .form-container {
+    flex: 1;
+    height: 100%;
+}
+
+.icon-container {
+    background-color: #181A1B;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.form-container {
+    background-color: #181A1B;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.icon-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000000;
+    margin: 2%;
+    width: 50rem;
+    height: 50rem;
+}
+
+#icon-name {
+    position: absolute;
+    font-family: "Yanone Kaffeesatz", serif;
+    font-weight: bold;
+    font-size: min(10vw, 10vh);
+    color: #46FFA6;
+}
+
+.form-box, .screen-notif-box {
+    background-color: #181A1B;
+    box-shadow: 0px 0px 10px #101010;
+    width: 50rem;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+.form-header {
+    font-family: "Yanone Kaffeesatz", serif;
+    font-size: 60px;
+    margin: 20px;
+    color: #46FFA6;
+}
+
+.label-field {
+    font-family: "Yanone Kaffeesatz", serif;
+    font-weight: normal;
+    font-size: 30px;
+    color: #BBBBBB;
+    margin-bottom: 5px;
+}
+
+.label-field-msg {
+    position: absolute;
+    font-family: "Yanone Kaffeesatz", serif;
+    font-weight: normal;
+    font-size: 25px;
+    color: #FA4454;
+    margin-left: 10px;
+}
+
+.input-field {
+    font-family: 'Poppins', sans-serif;
+    font-weight: light;
+    font-size: 20px;
+    font-style: normal;
+    width: 350px;
+    height: 30px;
+    background-color: #00000000;
+    outline: none;
+    border: none;
+    color: #FCFBF4;
+    border-bottom: solid;
+    border-color: #555555;
+}
+
+.div-input {
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+#label-remember {
+    font-family: "Yanone Kaffeesatz", serif;
+    font-weight: light;
+    font-size: 22px;
+    color: #DDDDDD;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+#box-remember {
+    accent-color: #2D9B66;
+    cursor: pointer;
+}
+
+.div-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.label-actions {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: #DDDDDD;
+    margin-top: 8px;
+    margin-right: 20px;
+    min-height: fit-content;
+}
+
+#action-forgot-password, .action-sign-up, .action-sign-in {
+    color: #39CE86;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#action-forgot-password:hover, .action-sign-up:hover, .action-sign-in:hover {
+    color: #2C9C66;
+}
+
+.div-password-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.button-password-reveal {
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23555555' viewBox='0 0 16 16' %3E%3Cpath d='m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z'/%3E%3Cpath d='M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z'/%3E%3C/svg%3E");
+    margin-left: 10px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.button-password-reveal:active {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23555555' viewBox='0 0 16 16' %3E%3Cpath d='M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0'/%3E%3Cpath d='M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7'/%3E%3C/svg%3E");
+}
+
+.button-proceed, .button-screen-notif-affirm {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #2D9B66;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    min-height: fit-content;
+    cursor: pointer;
+}
+
+.button-proceed:hover, .button-screen-notif-affirm:hover {
+    background-color: #237C50;
+}
+
+.screen-notif {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000055;
+    visibility: hidden;
+}
+
+.screen-notif.show {
+    visibility: visible;
+}
+
+.screen-notif-box {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.screen-notif-header {
+    font-family: "Yanone Kaffeesatz", serif;
+    font-size: 70px;
+    color: #46FFA6;
+    margin-bottom: 10px;
+}
+
+.screen-notif-msg {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: #FCFBF4;
+}
+
+.screen-notif-actions {
+    display: flex;
+    justify-content: end;
+}
+
+.content, #icon-name {
+    --fade-start: 50%;
+    --fade-end: 100%;
+    --scale-start: 150%;
+    --scale-end: 100%;
+    animation-name: fade-var, scale-var;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.89, 0.47, 0, 1.00);
+    animation-fill-mode: forwards;
+}
+
+#icon-name {
+    animation-duration: 1s;
+}
+
+#icon-background {
+    --fade-start: 0%;
+    --fade-end: 100%;
+    --scale-start: 50%;
+    --scale-end: 100%;
+    animation-name: fade-var, scale-var;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.89, 0.47, 0, 1.00);
+}
+
+.form-box {
+    --fade-start: 0%;
+    --fade-end: 100%;
+    --slide-x-start: 100px;
+    --slide-x-end: 0px;
+    animation-name: fade-var, slide-x-var;
+    animation-duration: 2s, 0.5s;
+    animation-timing-function: cubic-bezier(.24,.81,.39,1.25);
+}
+
+.form-box-content {
+    --fade-start: 25%;
+    --fade-end: 100%;
+    --slide-y-start: 100px;
+    --slide-y-end: 0px;
+    animation-name: fade-var, slide-y-var;
+    animation-duration: 0.75s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.label-field-msg {
+    --fade-start: 0%;
+    --fade-end: 100%;
+    --shake-x: 5px;
+    animation-name: fade-var, shake-x-var;
+    animation-duration: 0.25s;
+    animation-timing-function: linear, ease-in-out;
+}
+
+@keyframes scale-var {
+    0% { transform: scale(var(--scale-start)); }
+    100% { transform: scale(var(--scale-end)); }
+}
+
+@keyframes fade-var {
+    0% { opacity: var(--fade-start); }
+    100% { opacity: var(--fade-end); }
+}
+
+@keyframes slide-x-var {
+    0% { transform: translateX(var(--slide-x-start)); }
+    100% { transform: translateX(var(--slide-x-end)); }
+}
+
+@keyframes slide-y-var {
+    0% { transform: translateY(var(--slide-y-start)); }
+    100% { transform: translateY(var(--slide-y-end)); }
+}
+
+@keyframes shake-x-var {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(calc(var(--shake-x) * -1)); }
+    50% { transform: translateX(var(--shake-x)); }
+    75% { transform: translateX(calc(var(--shake-x) * -1)); }
+}
