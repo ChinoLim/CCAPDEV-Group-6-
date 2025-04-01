@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfol.io – Home</title>
+  <link rel="stylesheet" href="css/home.css" />
+
+  <!-- Fonts / Animations -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap"
+    rel="stylesheet"
+  />
+  
+</head>
+<body>
+  <div class="navbar">
+    <h1>Portfol.io</h1>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="portfolio.html">My Portfolio</a>
+      <a href="login.html">Logout</a>
+    </div>
+  </div>
+
+  <h2 class="home-title">Explore Developer Portfolios</h2>
+
+  <div id="search-filter-bar">
+    <input type="text" id="search-input" placeholder="Search by username...">
+    <select id="sort-select">
+      <option value="none">Sort by</option>
+      <option value="votes-desc">Most Upvotes</option>
+      <option value="votes-asc">Least Upvotes</option>
+    </select>
+  </div>
+  
+
+  <div id="feed-container" class="feed-container">
+    <!-- Cards go here -->
+  </div>
+
+  <script src="js/home.js"></script>
+</body>
+</html>
