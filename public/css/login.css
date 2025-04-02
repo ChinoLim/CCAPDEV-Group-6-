@@ -1,0 +1,218 @@
+/* public/css/login.css */
+
+/* 1) Global Reset & Body Setup */
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    background-color: #181A1B;
+  }
+  
+  /* 2) The Overall Layout */
+  
+  .login-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background-color: #181A1B;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* 3) Left Side with 3D Background */
+  
+  .icon-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-box {
+    position: relative;
+    width: 50rem;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #icon-name {
+    position: absolute;
+    font-family: "Yanone Kaffeesatz", serif;
+    font-weight: bold;
+    font-size: min(10vw, 8vh);
+    color: #46FFA6;
+  }
+  
+  #icon-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* 4) Right Side with the Sign-In Form */
+  
+  .form-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* 5) The Sign-In Form Container */
+  
+  .form-container {
+    background-color: #181A1B;
+    box-shadow: 0px 0px 10px #101010;
+    border-radius: 8px;
+    width: 40rem;
+    padding: 2rem;
+    animation: fade-var 1s linear, slide-x-var 0.5s ease;
+  }
+  
+  .form-header {
+    font-family: "Yanone Kaffeesatz", serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #46FFA6;
+    text-align: left;
+  }
+  
+  .login-form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .label-field {
+    font-family: "Yanone Kaffeesatz", serif;
+    font-size: 26px;
+    color: #BBBBBB;
+    margin-bottom: 4px;
+  }
+  
+  .div-input {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    padding: 6px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #555555;
+    color: #FCFBF4;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  input:focus {
+    border-color: #46FFA6;
+  }
+  
+  /* 6) Remember-Me row */
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .remember-label {
+    font-family: 'Poppins', sans-serif;
+    color: #CCCCCC;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap; /* ✅ Prevent text from breaking into two lines */
+    gap: 0.5px; /* ✅ Add small spacing between checkbox and text */
+  }
+  
+  
+  .remember-label input {
+    margin-right: 8px;
+    accent-color: #2D9B66; /* for modern browsers */
+  }
+  
+  .forgot-link {
+    font-size: 14px;
+    color: #39CE86;
+    text-decoration: underline;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .forgot-link:hover {
+    color: #2C9C66;
+  }
+  
+  /* 7) The Sign-In button */
+  
+  .div-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .button-proceed {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #2D9B66;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .button-proceed:hover {
+    background-color: #237C50;
+  }
+  
+  /* 8) Additional Links / Info Under Form */
+  
+  .additional-action {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #DDDDDD;
+  }
+  
+  /* For the sign-up link */
+  .additional-action a {
+    color: #39CE86;
+    text-decoration: underline;
+    margin-left: 6px;
+  }
+  
+  /* 9) Basic Animations (like entry-page.css) */
+  
+  @keyframes fade-var {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  
+  @keyframes slide-x-var {
+    0% {
+      transform: translateX(60px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
