@@ -7,7 +7,7 @@ A simple platform that allows developers to show who they are and what they offe
 - Add, edit, delete skills, projects, profile bio, etc
 - API fetch
 
-Try it out on the deployed [website](https://ccapdev-group-6.onrender.com/)
+Try it out on the deployed [website](https://ccapdev-group-6.onrender.com/login.html)
 
 ## Local Setup
 Portfol.io uses [node.js](https://nodejs.org/en) along with other modules to run.
