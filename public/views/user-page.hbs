@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/style/page-header.css">
+    <link rel="stylesheet" href="/style/screen-notif.css">
+    <link rel="stylesheet" href="/style/user-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="/script/defaults.js" type="module"></script>
+    <script src="/script/screen-notif.js" type="module"></script>
+    <script src="/script/page-header.js" type="module"></script>
+    <script src="/script/user-page.js" type="module"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfol.io - @{{username}} {{titleMetadata}}</title>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <div id="icon-name">Portfol.io</div>
+            <input class="input-field" id="profile-search" type="text" placeholder="Search user @" autocomplete="off">
+            <button id="button-profile"></button>
+
+            <div class="profile-menu profile-menu-onaccount">
+                <div class="profile-info">
+                    <h3 class="signed-in-label">Signed in as</h3>
+                    <h1 class="display-name">{{#if clientDisplayName}}{{clientDisplayName}}{{else}}(Unknown User){{/if}}</h1>
+                    <h2 class="username">@{{#if clientUsername}}{{clientUsername}}{{else}}(unknown.user){{/if}}</h2>
+                </div>
+
+                <ul class="dropdown hidden" id="dropdown-profile-menu">
+                    <li class="dropdown-item" id="dpm-view-portfolio">View my portfolio</li>
+                    <li class="dropdown-item" id="dpm-edit-portfolio">Edit my portfolio</li>
+                    <li class="dropdown-item warn" id="dpm-sign-out">Sign out</li>
+                    <li class="dropdown-item warn" id="dpm-delete-account">Delete account</li>
+                </ul>
+            </div>
+
+            <div class="profile-menu profile-menu-noaccount">
+                <div class="profile-info">
+                    <h3 class="signed-in-label">Not signed in<br>Create your own portfolio by signing in.</h3>
+                </div>
+
+                <ul class="dropdown hidden" id="dropdown-profile-menu-noaccount">
+                    <li class="dropdown-item" id="dpm-sign-in">Sign in</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="inner-box">
+            <div class="profile-identity">
+                <img id="picture" src="/images/background.png">
+                <div class="credentials">
+                    <h1 class="display-name">{{#if displayName}}{{displayName}}{{else}}(Unknown User){{/if}}</h1>
+                    <h2 class="username">@{{#if username}}{{username}}{{else}}(unknown.user){{/if}}</h2>
+                </div>
+            </div>
+
+            <p id="bio">{{#if bio}}{{bio}}{{else}}No bio provided.{{/if}}</p>
+        </div>
+    </div>
+
+    <div class="screen-notif" id="screen-notif-prompt">
+        <div class="screen-notif-box">
+            <h1 class="screen-notif-header">Header</h1>
+            <h2 class="screen-notif-msg">Message</h2>
+            <div class="screen-notif-actions">
+                <button class="button-screen-notif" id="button-screen-notif0">OKAY</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="screen-notif" id="screen-notif-input-password">
+        <div class="screen-notif-box">
+            <h1 class="screen-notif-header">Header</h1>
+            <h2 class="screen-notif-msg">Message</h2>
+
+            <div class="div-input div-password">
+                <h2 class="label-field label-password">Password<span class="label-field-msg label-password-msg">Invalid Password</span></h2>
+                <div class="div-password-actions">
+                    <input class="input-field input-password" id="screen-input-field-password" type="password" placeholder="Password" autocomplete="off">
+                    <div class="button-password-reveal"></div>
+                </div>
+            </div>
+
+            <div class="screen-notif-actions">
+                <button class="button-screen-notif" id="button-screen-notif1">CANCEL</button>
+                <button class="button-screen-notif" id="button-screen-notif2">OKAY</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

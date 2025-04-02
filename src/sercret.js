@@ -1,0 +1,1 @@
+export const sessionTokenKey = "portfol.io-jwt-secret-key-is-not-so-secret!";
