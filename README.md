@@ -5,7 +5,6 @@ A simple platform that allows developers to show who they are and what they offe
 - Create a personal portfolio (bio, skills, projects, profile pic)  
 - View & upvote/downvote other users’ portfolios
 - Add, edit, delete skills, projects, profile bio, etc
-- API fetch
 
 Try it out on the deployed [website](https://ccapdev-group-6.onrender.com/login.html)
 
