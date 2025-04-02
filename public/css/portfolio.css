@@ -535,4 +535,45 @@ background-color: #46FFA6;
   background-color: #555;
 }
 
+.project-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.project-btn {
+  padding: 10px 16px;
+  height: 42px;
+  min-width: 120px;
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  color: #00FF9C;
+  border: 1px solid #00FF9C;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+  position: relative;
+}
+
+.project-btn:hover {
+  background-color: #00FF9C;
+  color: #111;
+}
+
+.project-btn input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
 
