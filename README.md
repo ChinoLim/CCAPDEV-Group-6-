@@ -1,5 +1,6 @@
-root local project folder directory cmd commands:  npm install
+root local project folder directory cmd commands:  npm install 
                                                    npm install bcrypt
+                                                   npm install multer
                                                    npm install cookie-parser uuid  
                                                    node server.js
 
