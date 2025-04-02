@@ -58,8 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hide "Edit Bio", "Add Skill/Project", and skill/project edit/delete
     const toHide = document.querySelectorAll(
       '#btn-edit-bio, #btn-add-skill, #btn-add-project, ' +
-      '#edit-phone-btn, #edit-email-btn' +
-      '.btn-edit-skill, .btn-delete-skill, .btn-edit-project, .btn-delete-project'
+      '#edit-phone-btn, #edit-email-btn, .btn-edit-skill, .btn-delete-skill, .btn-edit-project, .btn-delete-project, .project-btn'
     );
     toHide.forEach(el => el.style.display = 'none');
     const picEditSection = document.getElementById('pic-edit-wrapper');
@@ -251,7 +250,13 @@ document.addEventListener('DOMContentLoaded', () => {
         <img src="${proj.photo || 'images/proj1.png'}" class="project-image" alt="proj">
         <h2 class="project-title">${proj.title}</h2>
         <p class="project-description">${proj.description || ''}</p>
-        <input type="file" class="input-update-project-pic" data-index="${idx}" accept="image/*" />
+
+         <div class="project-actions">
+        <label class="project-btn">
+          Change Image
+          <input type="file" class="input-update-project-pic" data-index="${idx}" hidden />
+        </label>
+
         <button class="btn-edit-project" data-index="${idx}">Edit</button>
         <button class="btn-delete-project" data-index="${idx}">Delete</button>
       `;
