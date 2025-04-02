@@ -58,9 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hide "Edit Bio", "Add Skill/Project", and skill/project edit/delete
     const toHide = document.querySelectorAll(
       '#btn-edit-bio, #btn-add-skill, #btn-add-project, ' +
+      '#edit-phone-btn, #edit-email-btn' +
       '.btn-edit-skill, .btn-delete-skill, .btn-edit-project, .btn-delete-project'
     );
     toHide.forEach(el => el.style.display = 'none');
+    const picEditSection = document.getElementById('pic-edit-wrapper');
+  if (picEditSection) picEditSection.style.display = 'none';
   }
 
   // 5) Fill the existing design with user data
